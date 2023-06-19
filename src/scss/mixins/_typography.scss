@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Barlow Regular';
+  src: url('../../fonts/Barlow-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Medium';
+  src: url('../../fonts/Barlow-Medium.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Medium Italic';
+  src: url('../../fonts/Barlow-MediumItalic.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Barlow SemiBold';
+  src: url('../../fonts/Barlow-SemiBold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Bold';
+  src: url('../../fonts/Barlow-Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-callout-numbers {
+  @include font-size(80, 40);
+  color: $color-white;
+  font-family: 'Barlow SemiBold', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-large-title {
+  @include font-size(80, 96);
+  color: $color-white;
+  font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-display-copy {
+  @include font-size(40, 50);
+  color: $color-primary-light-1;
+  font-family: 'Barlow Medium', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-title-1-semi {
+  @include font-size(60, 70);
+  color: $color-white;
+  font-family: 'Barlow SemiBold', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-title-1-regular {
+  @include font-size(60, 70);
+  color: $color-white;
+  font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-title-2-semi {
+  @include font-size(40, 50);
+  color: $color-neutral-gray-90;
+  font-family: 'Barlow SemiBold', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-title-3-semi {
+  @include font-size(32, 40);
+  color: $color-white;
+  font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: rem(0.05);
+  text-transform: uppercase;
+}
+
+@mixin font-body-1-regular {
+  @include font-size(26, 40);
+  color: $color-primary-light-1;
+  font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-body-1-semi {
+  @include font-size(26, 40);
+  color: $color-primary-light-1;
+  font-family: 'Barlow SemiBold', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-body-2-regular {
+  @include font-size(26, 34);
+  color: $color-primary-light-1;
+  font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-body-3-regular {
+  @include font-size(22, 28);
+  color: $color-primary-light-1;
+  font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-foot-note-medium {
+  @include font-size(22, 24);
+  color: $color-white;
+  font-family: 'Barlow Medium Italic', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin font-text-link {
+  @include font-size(30, 30);
+  color: $color-primary-dark-1;
+  font-family: 'Barlow Bold', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: rem(0.05);
+  text-transform: uppercase;
+}

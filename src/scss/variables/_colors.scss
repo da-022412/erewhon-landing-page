@@ -1,0 +1,60 @@
+// Primary
+$color-primary-dark-1: #169AC5;
+$color-primary-dark-2: #0E607C;
+$color-primary-dark-3: #083645;
+$color-primary-light-1: #ACE3F6;
+$color-primary-light-2: #D1F0FA;
+$color-primary-main: #47C2EB;
+
+// Neutral
+$color-neutral-white: #FFF;
+$color-neutral-black: #000;
+$color-neutral-gray-10: #14191F;
+$color-neutral-gray-15: #1F252E;
+$color-neutral-gray-21: #2C3541;
+$color-neutral-gray-27: #374353;
+$color-neutral-gray-32: #425063;
+$color-neutral-gray-43: #586A83;
+$color-neutral-gray-60: #8495AD;
+$color-neutral-gray-72: #AAB6C7;
+$color-neutral-gray-82: #C8D0DA;
+$color-neutral-gray-90: #E0E5EB;
+$color-neutral-gray-95: #F0F2F5;
+
+//Accent
+$color-accent-dark-1: #C5C516;
+$color-accent-dark-2: #7C7C0E;
+$color-accent-dark-3: #454508;
+$color-accent-light-1: #F6F6AC;
+$color-accent-light-2: #FAFAD1;
+$color-accent-main: #EBEB47;
+
+// Gradient
+$color-gradient-banana: linear-gradient(225deg, #EBEB47 0%, #47EB99 100%);
+$color-gradient-boost: linear-gradient(225deg, #47EB99 0%, #47C2EB 100%);
+$color-gradient-carbon: linear-gradient(180deg, #2C3541 0%, #14191F 100%);
+$color-gradient-champion: linear-gradient(225deg, #EB9947 0%, #EBEB47 100%);
+$color-gradient-classic: linear-gradient(225deg, #47C2EB 0%, #1A6FE6 100%);
+$color-gradient-prime: linear-gradient(225deg, #EBEB47 0%, #47EB99 50%, #47C2EB 100%);
+$color-gradient-cloud: linear-gradient(225deg, #D1F0FA 0%, #D1F0FA 0.01%, #47C2EB 100%);
+$color-gradient-iridium: linear-gradient(45deg, #9947EB 0%, #196FE5 50%, #47C2EB 100%);
+$color-gradient-lava: linear-gradient(225deg, #E61A5D 0%, #EB9947 100%);
+$color-gradient-plasma: linear-gradient(45deg, #E5195D 0%, #9947EB 100%);
+$color-gradient-prime-dark: linear-gradient(225deg, #7C7C0E 0%, #0E7C45 50%, #0E607C 100%);
+$color-gradient-prime-darker: linear-gradient(225deg, #454508 0%, #084526 50%, #083645 100%);
+$color-gradient-steel: linear-gradient(225deg, #C8D0DA 0%, #586A83 100%);
+$color-gradient-twilight: linear-gradient(45deg, #9947EB 0%, #196FE5 100%);
+
+// Secondary
+$color-secondary-dark-1: #16C56E;
+$color-secondary-dark-2: #0E7C45;
+$color-secondary-dark-3: #084526;
+$color-secondary-light-1: #ACF6D1;
+$color-secondary-light-2: #D1FAE5;
+$color-secondary-main: #47EB99;
+
+// Utility
+$color-utility-bright: #1A6FE5;
+$color-utility-lava: #E51A5D;
+$color-utility-lightning: #9947EB;
+$color-utility-rise: #EB9947;
