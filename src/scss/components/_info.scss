@@ -4,11 +4,14 @@
   overflow: hidden;
 
   .cc--info {
-    @include maxwidth(1280px);
     @include padding(rem(100) cols(1, 12));
 
     @include mq($bp768) {
       @include padding(null cols(8));
+    }
+
+    .inner-wrapper {
+      @include maxwidth(1280px);
     }
 
     .header-container {
