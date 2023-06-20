@@ -11,12 +11,12 @@
     }
 
     .inner-wrapper {
+      @include card-shadow;
       @include maxwidth(1440px);
       @include padding(rem(48) cols(1, 10));
       background: $color-gradient-obsidian;
       border: rem(1) solid $color-neutral-gray-27;
       border-radius: rem(16);
-      box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.32), 0 4px 8px rgba(0, 0, 0, 0.05), 0 4px 40px rgba(0, 0, 0, 0.4);
 
       @include mq($bp768) {
         @include padding(rem(100) cols(5, 36));

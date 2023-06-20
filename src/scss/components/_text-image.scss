@@ -11,11 +11,11 @@
     }
 
     .flex-container {
+      @include card-shadow;
       @include maxwidth(1440px);
       @include padding(rem(50) cols(1, 10));
       border: rem(1) solid $color-neutral-gray-27;
       border-radius: rem(16);
-      box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.32), 0 4px 8px rgba(0, 0, 0, 0.05), 0 4px 40px rgba(0, 0, 0, 0.4);
       display: flex;
       flex-direction: column;
 

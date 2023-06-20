@@ -54,11 +54,7 @@
         span {
           @include font-regular;
           @include font-size(180, 40);
-          background: $color-gradient-prime;
-          background-clip: text;
-          text-fill-color: transparent;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          @include gradient-text($color-gradient-prime);
         }
       }
 
@@ -68,13 +64,7 @@
         span {
           @include font-semi;
           @include font-size(55, 40);
-          background: $color-gradient-prime;
-          background-clip: text;
-          letter-spacing: rem(0.04);
-          text-fill-color: transparent;
-          text-transform: uppercase;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          @include gradient-text($color-gradient-prime);
         }
       }
     }
