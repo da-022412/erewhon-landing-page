@@ -15,6 +15,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
   width: auto;
 
   @include mq($bp768) {
