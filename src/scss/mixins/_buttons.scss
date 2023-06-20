@@ -1,4 +1,4 @@
-@mixin button() {
+@mixin button {
   @include font-bold;
   @include font-size(20, 24);
   @include padding(rem(16) rem(28));
