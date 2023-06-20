@@ -8,7 +8,7 @@
       width: 100%;
 
       .f--image {
-        @include padding(null cols(2, 24));
+        @include padding(null cols(1, 12));
 
         @include mq($bp768) {
           @include padding(null cols(14));

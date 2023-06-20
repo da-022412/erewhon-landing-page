@@ -1,0 +1,107 @@
+.c--info {
+  background-color: $color-neutral-gray-10;
+  position: relative;
+  overflow: hidden;
+
+  .cc--info {
+    @include maxwidth(1280px);
+    @include padding(rem(100) cols(1, 12));
+
+    @include mq($bp768) {
+      @include padding(null cols(8));
+    }
+
+    .header-container {
+      @include margin(null null rem(32));
+
+      @include mq($bp768) {
+        @include margin(null null rem(80));
+      }
+
+      .f--section-title {
+        text-align: center;
+
+        h2 {
+          @include font-regular;
+          @include font-size(30, 40);
+          color: $color-neutral-white;
+
+          @include mq($bp768) {
+            @include font-size(60, 70);
+          }
+        }
+      }
+    }
+
+    .number-container {
+      @include margin(null null rem(32));
+
+      @include mq($bp768) {
+        @include margin(null null rem(80));
+      }
+
+      .number {
+        @include margin(null null rem(20));
+        text-align: center;
+
+        @include mq($bp768) {
+          @include margin(null null rem(40))
+        }
+
+        span {
+          @include font-regular;
+          @include font-size(180, 40);
+          background: $color-gradient-prime;
+          background-clip: text;
+          text-fill-color: transparent;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .number-copy {
+        text-align: center;
+
+        span {
+          @include font-semi;
+          @include font-size(55, 40);
+          background: $color-gradient-prime;
+          background-clip: text;
+          letter-spacing: rem(0.04);
+          text-fill-color: transparent;
+          text-transform: uppercase;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    .text-container {
+      @include margin(null null rem(50));
+
+      @include mq($bp768) {
+        @include margin(null null rem(100));
+      }
+
+      .f--description {
+        text-align: center;
+
+        p {
+          @include font-regular;
+          @include font-size(40, 50);
+          color: $color-primary-light-1;
+        }
+      }
+    }
+
+    .link-container {
+      text-align: center;
+
+      .link {
+        a {
+          @include button;
+        }
+      }
+    }
+  }
+}

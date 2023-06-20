@@ -1,0 +1,24 @@
+@mixin button() {
+  @include font-bold;
+  @include font-size(20, 24);
+  @include padding(rem(16) rem(28));
+  align-items: center;
+  appearance: none;
+  background-color: $color-primary-main;
+  border-radius: rem(54);
+  color: $color-neutral-gray-10;
+  display: inline-block;
+  justify-content: center;
+  letter-spacing: rem(2);
+  outline-offset: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: auto;
+
+  @include mq($bp768) {
+    @include font-size(30, 36);
+    @include padding(null rem(56))
+  }
+}
