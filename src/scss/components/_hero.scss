@@ -1,0 +1,19 @@
+.c--hero {
+  position: relative;
+  overflow: hidden;
+
+  .cc--hero {
+    .logo-container {
+      @include centered;
+      width: 100%;
+
+      .f--image {
+        @include padding(null cols(2, 24));
+
+        @include mq($bp768) {
+          @include padding(null cols(14));
+        }
+      }
+    }
+  }
+}
