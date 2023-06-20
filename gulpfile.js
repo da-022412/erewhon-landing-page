@@ -38,7 +38,7 @@ gulp.task(
       server: './dist/',
     });
 
-    gulp.watch(['src/scss/*.scss', 'src/components/*.scss'], gulp.series('sass'));
+    gulp.watch(['src/scss/*.scss', 'src/scss/components/*.scss'], gulp.series('sass'));
     gulp.watch(['src/components/*.hbs', 'src/templates/*.hbs'], gulp.series('handlebars'));
     gulp.watch('dist/*.html').on('change', browserSync.reload);
   })
