@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Barlow Regular';
+  src: url('../assets/fonts/Barlow-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Medium';
+  src: url('../assets/fonts/Barlow-Medium.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Medium Italic';
+  src: url('../assets/fonts/Barlow-MediumItalic.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Barlow SemiBold';
+  src: url('../assets/fonts/Barlow-SemiBold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Bold';
+  src: url('../assets/fonts/Barlow-Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-regular {
+  font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-medium {
+  font-family: 'Barlow Medium', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-medium-italic {
+  font-family: 'Barlow Medium Italic', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-semi {
+  font-family: 'Barlow SemiBold', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-bold {
+  font-family: 'Barlow Bold', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
