@@ -21,6 +21,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.1.0",
+    "sass": "^1.63.4",
     "stylelint": "^15.8.0",
     "stylelint-config-sass-guidelines": "^10.0.0"
   }
