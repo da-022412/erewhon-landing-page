@@ -1,0 +1,51 @@
+.c--form-embed {
+  background-color: $color-neutral-gray-10;
+  position: relative;
+  overflow: hidden;
+
+  .cc--form-embed {
+    @include padding(rem(60) cols(1, 12));
+
+    @include mq($bp768) {
+      @include padding(null cols(9));
+    }
+
+    .inner-wrapper {
+      @include maxwidth(1200px);
+    }
+
+    .f--section-title {
+      @include margin(null null rem(20));
+
+      @include mq($bp768) {
+        @include margin(null null rem(40));
+      }
+
+      h2 {
+        @include font-regular;
+        @include font-size(30, 40);
+        color: $color-neutral-white;
+        text-align: center;
+
+        @include mq($bp768) {
+          @include font-size(60, 70);
+        }
+      }
+    }
+
+    .f--description {
+      @include margin(null null rem(30));
+      text-align: center;
+
+      p {
+        @include font-regular;
+        @include font-size(22, 30);
+        color: $color-primary-light-1;
+
+        @include mq($bp768) {
+          @include font-size(40, 50);
+        }
+      }
+    }
+  }
+}
