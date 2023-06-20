@@ -1,5 +1,7 @@
 .c--text-image {
   background: $color-neutral-gray-10;
+  overflow: hidden;
+  position: relative;
 
   .cc--text-image {
     @include padding(null cols(1, 12));
