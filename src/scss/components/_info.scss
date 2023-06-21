@@ -51,10 +51,18 @@
           @include margin(null null rem(40))
         }
 
+        @include mq($bp1024) {
+          @include margin(rem(140) null null);
+        }
+
         span {
           @include font-regular;
           @include font-size(100, 40);
           @include gradient-text($color-gradient-prime);
+
+          @include mq($bp1024) {
+            @include font-size(230, 40);
+          }
         }
       }
 

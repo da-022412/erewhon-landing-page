@@ -115,7 +115,7 @@
             }
 
             h3 {
-              @include font-semi;
+              @include font-semi-bold;
               @include font-size(26, 34);
               color: $color-neutral-white;
 
