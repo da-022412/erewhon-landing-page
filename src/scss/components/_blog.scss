@@ -1,0 +1,164 @@
+.c--blog {
+  background: $color-neutral-gray-10;
+  overflow: hidden;
+  position: relative;
+
+  .cc--blog {
+    @include padding(null cols(1, 12) rem(100));
+
+    @include mq($bp768) {
+      @include padding(null cols(6) rem(135));
+    }
+
+    .inner-wrapper {
+      @include maxwidth(1440px);
+    }
+
+    .title-container {
+      .f--section-title {
+        @include margin(null null rem(10));
+
+        @include mq($bp768) {
+          @include margin(null null rem(14));
+        }
+
+        h2 {
+          @include font-regular;
+          @include font-size(30, 40);
+          color: $color-neutral-white;
+
+          @include mq($bp768) {
+            @include font-size(60, 70);
+          }
+
+          span {
+            @include gradient-text($color-gradient-boost);
+            @include font-regular-italic;
+          }
+        }
+      }
+
+      .f--description {
+        @include margin(null null rem(50));
+
+        @include mq($bp768) {
+          @include margin(null null rem(75));
+        }
+
+        p {
+          @include font-regular;
+          @include font-size(18, 24);
+          color: $color-primary-light-1;
+
+          @include mq($bp768) {
+            @include font-size(26, 40);
+          }
+        }
+      }
+    }
+
+    .cards-container {
+      @include mq($bp1024) {
+        display: flex;
+      }
+
+      .f--card {
+        @include card-shadow;
+        @include padding(rem(16) null rem(30));
+        border: rem(1) solid $color-neutral-gray-27;
+        border-radius: rem(16);
+
+        @include mq($bp768) {
+          @include padding(rem(24) null rem(40));
+          border-radius: rem(24);
+        }
+
+        @include mq($bp1024) {
+          flex: 0 0 cols(11, 36);
+        }
+
+        &:not(:last-child) {
+          @include margin(null null rem(50));
+
+          @include mq($bp1024) {
+            @include margin(null cols(1.5, 36) 0 null);
+          }
+        }
+
+        .f--image {
+          @include margin(null null rem(24));
+          @include padding(null rem(16));
+
+          @include mq($bp768) {
+            @include margin(null null rem(35));
+            @include padding(null rem(24));
+          }
+
+          img {
+            @include card-shadow;
+            border-radius: rem(8);
+          }
+        }
+
+        .text-container {
+          @include padding(null cols(1, 10));
+
+          @include mq($bp1024) {
+            @include padding(null cols(1, 11));
+          }
+
+          .f--card-title {
+            @include margin(null null rem(10));
+
+            @include mq($bp768) {
+              @include margin(null null rem(14));
+            }
+
+            h3 {
+              @include font-semi;
+              @include font-size(26, 34);
+              color: $color-neutral-white;
+
+              @include mq($bp1024) {
+                @include font-size(40, 50);
+              }
+            }
+          }
+
+          .f--description {
+            @include margin(null null rem(20));
+
+            @include mq($bp768) {
+              @include margin(null null rem(40));
+            }
+
+            p {
+              @include font-regular;
+              @include font-size(18, 24);
+              color: $color-primary-light-1;
+
+              @include mq($bp1024) {
+                @include font-size(26, 34);
+              }
+            }
+          }
+
+          .f--link {
+            a {
+              @include font-bold;
+              @include font-size(20, 24);
+              color: $color-primary-main;
+              letter-spacing: rem(2);
+              text-decoration: none;
+              text-transform: uppercase;
+
+              @include mq($bp1024) {
+                @include font-size(30, 30);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
