@@ -7,11 +7,20 @@
     @include padding(rem(70) cols(1, 12) rem(60));
 
     @include mq($bp768) {
-      @include padding(null cols(9));
+      @include padding(rem(150) cols(6));
     }
 
     .inner-wrapper {
-      @include maxwidth(1200px);
+      @include card-shadow;
+      @include maxwidth(1440px);
+      @include padding(rem(48) cols(1, 10));
+      border: rem(1) solid $color-neutral-gray-27;
+      border-radius: rem(16);
+
+      @include mq($bp1024) {
+        @include padding(rem(100) cols(3, 36));
+        border-radius: rem(24);
+      }
     }
 
     .f--section-title {
@@ -53,7 +62,7 @@
     }
 
     .form-container {
-      @include mq($bp768) {
+      @include mq($bp1200) {
         @include margin(null auto);
         max-width: cols(12, 30);
       }

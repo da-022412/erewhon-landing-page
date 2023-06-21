@@ -13,10 +13,31 @@
     .inner-wrapper {
       @include card-shadow;
       @include maxwidth(1440px);
+      @include margin(rem(1) null);
       @include padding(rem(48) cols(1, 10));
-      background: $color-gradient-obsidian;
-      border: rem(1) solid $color-neutral-gray-27;
       border-radius: rem(16);
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        @include centered;
+        background: $color-gradient-obsidian;
+        border-radius: rem(16);
+        content: '';
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
+
+      &::before {
+        @include centered;
+        background: $color-gradient-classic;
+        border-radius: rem(16);
+        content: '';
+        height: calc(100% + #{rem(1)});
+        width: calc(100% + #{rem(1)});
+        z-index: -2;
+      }
 
       @include mq($bp768) {
         @include padding(rem(100) cols(5, 36));

@@ -25,7 +25,7 @@
         flex-direction: row;
       }
 
-      .image-container {
+      .video-container {
         @include margin(null null rem(24));
 
         @include mq($bp1024) {
