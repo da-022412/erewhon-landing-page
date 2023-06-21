@@ -75,14 +75,16 @@
               @include font-regular-italic;
               @include centered('y');
               color: $color-neutral-gray-60;
-              left: rem(32);
+              left: rem(20);
 
               @include mq($bp768) {
                 @include font-size(22, 22);
+                left: rem(32);
               }
             }
 
-            .fsFieldFocused .fsLabel {
+            .fsFieldFocused .fsLabel,
+            .fsValidationError .fsLabel {
               display: none;
             }
 
@@ -95,6 +97,17 @@
 
               @include mq($bp768) {
                 border-radius: rem(20);
+              }
+
+              &[type=email] {
+                @include font-regular;
+                @include font-size(16, 16);
+                @include padding(null null null rem(20));
+
+                @include mq($bp768) {
+                  @include font-size(22, 22);
+                  @include padding(null null null rem(32));
+                }
               }
             }
           }
