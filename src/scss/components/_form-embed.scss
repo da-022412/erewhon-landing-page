@@ -4,10 +4,10 @@
   overflow: hidden;
 
   .cc--form-embed {
-    @include padding(rem(70) cols(1, 12) rem(60));
+    @include padding(null cols(1, 12));
 
     @include mq($bp768) {
-      @include padding(rem(150) cols(6));
+      @include padding(null cols(6));
     }
 
     .inner-wrapper {

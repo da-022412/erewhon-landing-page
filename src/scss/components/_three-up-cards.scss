@@ -49,9 +49,13 @@
         position: relative;
 
         @include mq($bp1024) {
-          @include padding(rem(100) cols(1, 36) rem(50));
+          @include padding(rem(100) rem(50) rem(50));
           border-radius: rem(24);
           flex: 0 0 cols(11, 36);
+        }
+
+        &:nth-child(2) {
+          @include padding(null rem(32));
         }
 
         &:not(:last-child) {

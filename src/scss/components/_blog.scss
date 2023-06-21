@@ -4,10 +4,10 @@
   position: relative;
 
   .cc--blog {
-    @include padding(null cols(1, 12) rem(100));
+    @include padding(rem(50) cols(1, 12) rem(100));
 
     @include mq($bp768) {
-      @include padding(null cols(6) rem(135));
+      @include padding(rem(100) cols(6));
     }
 
     .inner-wrapper {
