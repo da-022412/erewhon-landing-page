@@ -1,0 +1,140 @@
+.c--form-embed {
+  background-color: $color-neutral-gray-10;
+  position: relative;
+  overflow: hidden;
+
+  .cc--form-embed {
+    @include padding(rem(70) cols(1, 12) rem(60));
+
+    @include mq($bp768) {
+      @include padding(null cols(9));
+    }
+
+    .inner-wrapper {
+      @include maxwidth(1200px);
+    }
+
+    .f--section-title {
+      @include margin(null null rem(20));
+
+      @include mq($bp768) {
+        @include margin(null null rem(40));
+      }
+
+      h2 {
+        @include font-regular;
+        @include font-size(30, 40);
+        color: $color-neutral-white;
+        text-align: center;
+
+        @include mq($bp768) {
+          @include font-size(60, 70);
+        }
+      }
+    }
+
+    .f--description {
+      @include margin(null null rem(30));
+      text-align: center;
+
+      @include mq($bp768) {
+        @include margin(null null rem(100));
+      }
+
+      p {
+        @include font-regular;
+        @include font-size(22, 30);
+        color: $color-primary-light-1;
+
+        @include mq($bp768) {
+          @include font-size(40, 50);
+        }
+      }
+    }
+
+    .form-container {
+      @include mq($bp768) {
+        @include margin(null auto);
+        max-width: cols(12, 30);
+      }
+
+      .fsBody {
+        @include padding(0);
+        background-color: $color-neutral-gray-10;
+
+        .fsForm {
+          @include margin(0);
+          @include padding(0);
+          background-color: $color-neutral-gray-10;
+
+          .fsSection {
+            position: relative;
+
+            .fsLabel {
+              @include font-size(16, 16);
+              @include font-regular-italic;
+              @include centered('y');
+              color: $color-neutral-gray-60;
+              left: rem(32);
+
+              @include mq($bp768) {
+                @include font-size(22, 22);
+              }
+            }
+
+            .fsFieldFocused .fsLabel {
+              display: none;
+            }
+
+            .fsField {
+              @include card-shadow;
+              background-color: $color-neutral-gray-10;
+              border: rem(1) solid $color-neutral-gray-27;
+              border-radius: rem(12);
+              height: rem(68);
+
+              @include mq($bp768) {
+                border-radius: rem(20);
+              }
+            }
+          }
+
+          .fsSubmit {
+            @include margin(rem(24) 0 0);
+            @include padding(0);
+
+            @include mq($bp768) {
+              @include margin(rem(56) null null);
+            }
+  
+            input[type=submit].fsSubmitButton {
+              @include font-bold;
+              align-items: center;
+              appearance: none;
+              background-color: $color-primary-main !important;
+              border-radius: rem(54) !important;
+              color: $color-neutral-gray-10 !important;
+              display: inline-block;
+              font-size: rem(20) !important;
+              justify-content: center;
+              letter-spacing: rem(2);
+              outline-offset: 0;
+              padding: rem(16) rem(28) !important;
+              position: relative;
+              text-align: center;
+              text-decoration: none;
+              text-transform: uppercase;
+              white-space: nowrap;
+              width: auto;
+
+              @include mq($bp768) {
+                @include font-size(30, 36);
+                @include padding(null rem(56))
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

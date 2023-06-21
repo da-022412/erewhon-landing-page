@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'Barlow Regular Italic';
+  src: url('../assets/fonts/Barlow-Italic.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
   font-family: 'Barlow Medium';
   src: url('../assets/fonts/Barlow-Medium.ttf');
   font-style: normal;
@@ -35,6 +42,12 @@
 
 @mixin font-regular {
   font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-regular-italic {
+  font-family: 'Barlow Regular Italic', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
