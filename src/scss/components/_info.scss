@@ -62,7 +62,7 @@
         text-align: center;
 
         span {
-          @include font-semi;
+          @include font-semi-bold;
           @include font-size(30, 40);
           @include gradient-text($color-gradient-prime);
           text-transform: uppercase;

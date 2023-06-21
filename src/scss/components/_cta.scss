@@ -32,7 +32,7 @@
       }
 
       span {
-        @include font-semi;
+        @include font-semi-bold;
         @include font-size(18, 28);
         @include gradient-text($color-gradient-classic);
         text-transform: uppercase;

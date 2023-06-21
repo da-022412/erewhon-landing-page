@@ -68,7 +68,7 @@
         top: rem(-20);
 
         span {
-          @include font-semi;
+          @include font-semi-bold;
           @include padding(rem(6) rem(54));
           background-color: $color-neutral-gray-10;
           border: rem(1) solid $color-neutral-gray-27;
@@ -106,7 +106,7 @@
         }
 
         h3 {
-          @include font-semi;
+          @include font-semi-bold;
           @include font-size(26, 34);
           color: $color-neutral-white;
 
