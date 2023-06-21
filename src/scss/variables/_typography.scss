@@ -1,77 +1,35 @@
-@font-face {
-  font-family: 'Barlow Regular';
-  src: url('../assets/fonts/Barlow-Regular.ttf');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Barlow Regular Italic';
-  src: url('../assets/fonts/Barlow-Italic.ttf');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Barlow Medium';
-  src: url('../assets/fonts/Barlow-Medium.ttf');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Barlow Medium Italic';
-  src: url('../assets/fonts/Barlow-MediumItalic.ttf');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Barlow SemiBold';
-  src: url('../assets/fonts/Barlow-SemiBold.ttf');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Barlow Bold';
-  src: url('../assets/fonts/Barlow-Bold.ttf');
-  font-style: normal;
-  font-weight: normal;
-}
-
 @mixin font-regular {
-  font-family: 'Barlow Regular', Helvetica, Arial, sans-serif;
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 @mixin font-regular-italic {
-  font-family: 'Barlow Regular Italic', Helvetica, Arial, sans-serif;
-  font-style: normal;
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
+  font-style: italic;
   font-weight: normal;
 }
 
 @mixin font-medium {
-  font-family: 'Barlow Medium', Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-style: normal;
 }
 
 @mixin font-medium-italic {
-  font-family: 'Barlow Medium Italic', Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
 }
 
 @mixin font-semi-bold {
-  font-family: 'Barlow SemiBold', Helvetica, Arial, sans-serif;
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 @mixin font-bold {
-  font-family: 'Barlow Bold', Helvetica, Arial, sans-serif;
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
 }
